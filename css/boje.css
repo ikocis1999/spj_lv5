@@ -1,9 +1,8 @@
 body {
-  height: 100vh;
-  margin: 0;
-  padding: 1rem;
+  height: 1rem;
+  margin-top: 20rem;
+  padding: 2rem;
   display: grid;
-  font-family: system-ui;
 }
 div {
   background: white;

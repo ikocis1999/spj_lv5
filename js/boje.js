@@ -4,5 +4,8 @@ const setBg = () => {
   color.innerHTML = "#" + randomColor;
 };
 
-getNew.addEventListener("click", setBg);
-setBg();
+ var  btn = document.getElementById('genNew')
+ if (btn) {
+ 	btn.addEventListener("click", setBg);
+ 	setBg();
+}
