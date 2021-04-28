@@ -1,0 +1,28 @@
+#SliderSve{
+  width: 100%;
+}
+#sliderContainer
+{
+    width: 980px; 
+    height: 300px; 
+    background-color: silver;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#btnContainer
+{
+   margin: 20px auto; 
+   display: block;
+   text-align:center;
+}
+
+#sliderContainer{
+	display: none;
+}
+
+button
+{
+    padding: 10px;
+
+}

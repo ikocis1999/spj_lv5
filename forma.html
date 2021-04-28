@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Forma</title>
+    <script src="assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/forma.css">
+</head>
+<body>
+    
+    <div id="dvFormContainer">
+        <h3 class="naslov">Student</h3>
+        <table>
+            <tr>
+                <td>Ime studenta:</td>
+                <td> <input aria-describedby="imeInpt" type="text" id="inptIme"> </td>
+            </tr>
+            <tr>
+                <td>Prezime studenta:</td>
+                <td> <input aria-describedby="prezimeInpt" type="text" id="inptPrezime"> </td>
+            </tr>
+            <tr>
+                <td>JMBAG:</td>
+                <td> <input aria-describedby="jmbagInpt" type="text" id="inptJMBAG">  </td>
+            </tr>
+            <tr>
+                <td>OIB:</td>
+                <td> <input aria-describedby="oibInpt" type="text" id="inptOIB">  </td>
+            </tr>
+            <tr>
+                <td>Datum rođenja:</td>
+                <td>
+                    <input aria-describedby="dateInpt" type="text" id="inptDate">
+                </td>
+            </tr>
+            <tr>
+                <td>Adresa:</td>
+                <td> <input aria-describedby="adresa" type="text" id="inptAdress">  </td>
+            </tr>
+            <tr>
+                <td>Poštanski btoj:</td>
+                <td> <input aria-describedby="postNumInpt" type="text" id="inptPostNum">  </td>
+            </tr>
+            <tr>
+                <td>Grad:</td>
+                <td> <input aria-describedby="gradInpt" type="text" id="inptGrad">  </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <button onclick="checkInputs()">Spremi</button> </td>
+            </tr>
+        </table>
+    </div>
+    
+
+<script src="js/forma1.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	
+</head>
+<body>
+	<div id="formaToDoLista">
+		<h1 id="naslovToDoLista">TO DO LISTA</h1>
+		<form>			
+				<p>Dodaj nove vrijednosti u listu:</p>
+				
+				Value: <input type="text" name="tesk" id="input">
+				<button>Dodaj</button><br>
+				<ul id="list"></ul>
+		</form>	
+			<script>
+			var pero = '"far fa-trash-alt"';
+			var pero1 = '"delete"';		
+				$(document).ready(function(){
+					$("button").click(function(){
+						var myList = $("#input").val();
+						$("#list").append('<li><input type='+'"checkbox"'+"value="+myList+"name="+myList+"><span><button id="+pero1+"><i class="+pero+"></i></button></span><label for="+myList+">"+myList+" </label></li>");
+						return false;
+					});
+
+					$("#delete").on("click", "li", function(e){
+						$(e.target).remove();
+					});
+				});		
+			</script>
+										
+	</div>
+
+    
+</body>
+</html>
