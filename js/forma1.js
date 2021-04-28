@@ -1,13 +1,3 @@
-function InitializeGodinaElements()
-{
-	var oSelect = $('#dpGodinaRodjenja');
-	for(var i=1975; i<2000; i++)
-	{
-		//console.log(i);
-		oSelect.append('<option value="'+i+'">'+i+'</option>');
-	}
-}
-
 function checkInputs(){
   //var textSportovi = 'button[data-id=SelectSportoviAzuriraj] .filter-option-inner-inner';
   const FirstName = document.getElementById('inptIme');
@@ -22,18 +12,22 @@ function checkInputs(){
   const LastNameValue = LastName.value.trim();
   var PotvrdaSlanja = '';
   var Tocno = true;
-  if (/^\s*(3[01]|[12][0-9]|0?[1-9])\-(1[012]|0?[1-9])\-((?:19|20)\d{2})\s*$/g.test(Drodenja)) {
+  if (/^\s*(3[01]|[12][0-9]|0?[1-9])\-(1[012]|0?[1-9])\-((?:19|20)\d{2})\s*$/g.test(Drodenja) == false) {
     console.log("Datum nije ispravan");
+    Tocno = false;
   }
 
   if (sGrad == '') {
   	console.log('Polje ne može biti prazno');
+    Tocno = false;
   }
   if (isNaN(postBr)) {
   	console.log("Postanksi broj mora biti broj");
+    Tocno = false;
   }
   if (Adresa == "") {
   	console.log("polje ne može bit prazno");
+    Tocno = false;
   }
 
   	if(Jmbag === ''){
